@@ -10,7 +10,6 @@ class Pages extends BaseController
     {
         return view('index');
     }
-    
     public function view($page = 'home')
     {
         if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
@@ -24,4 +23,9 @@ class Pages extends BaseController
             . view('pages/' . $page)
             . view('templates/footer');
     }
+
+
 }
+
+
+    

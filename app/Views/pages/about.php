@@ -1,1 +1,4 @@
-<h3> Ini halaman about </h3>
+<?= $this->extend('template')?>
+<?= $this->section('content')?>
+<h1>Hallo ini merupakan tampilan About</h1>
+<?= $this ->endSection()?>
